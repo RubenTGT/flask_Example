@@ -24,13 +24,12 @@ python main.py
 
 ## Rutas
 
-El proyecto cuenta con dos rutas. La ruta principal `/` la cual se abre automaticamente al ejecutar la aplicación y la ruta `/search`
+- Ruta principal `/`: Se abre automaticamente al ejecutar la aplicación. Muestra el formulario para buscar personas por nombre y apellido
+- Ruta `/search`: Es la ruta usada para buscar personas por nombre y appelido usando el metodo **POST** Devuelve el JSON requerido
 
 ## Vistas
 
-### Ruta principal (index)
-
-### Search
+### Index
 
 ## Diseño de la base de datos
 ![Diagrama de base de datos](/docs/db_design.png)
