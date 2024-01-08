@@ -21,6 +21,17 @@ pip install -r requirements.txt
 cd app
 python main.py
 ```
+### Levantamiento de la base de datos
+Eecuta las sentencias SQL de [db.sql](/sql/db.sql) para crear las tablas necesarias para el proyecto
+
+### Configuración de las variables de entorno
+Crea un archivo .env donde configures los siguientes valores para conectar correctamente la base de datos
+```bash
+MYSQL_USER=
+MYSQL_PASSWORD=
+MYSQL_HOST=
+MYSQL_DB=
+```
 
 ## Rutas
 
