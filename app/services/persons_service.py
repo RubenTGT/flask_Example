@@ -1,4 +1,4 @@
-from flask import jsonify, request
+from flask import jsonify, render_template, request
 from database.db_connection import mysql
 from datetime import datetime
 
@@ -15,6 +15,8 @@ def search_person():
         log_query(datetime.now(), f"Name: {name}, Last Name: {last_name}", str(response))
 
         return jsonify(response)
+    else:
+        return render_template('index.html')
 
 def log_query(query_date, request_parameters, result):
     cur = mysql.connection.cursor()

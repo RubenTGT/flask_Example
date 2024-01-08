@@ -1,14 +1,14 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, redirect, render_template, url_for
 from services.persons_service import search_person
 
-persons = Blueprint('contacts', __name__, template_folder='app/templates')
+persons = Blueprint('persons', __name__, template_folder='app/templates')
 
 
 @persons.route('/')
-def Index():
-    return render_template('index.html')
+def index():
+    return redirect(url_for('persons.search_person_route'))
 
 
-@persons.route('/browse_person', methods=['POST'])
+@persons.route('/browse_person', methods=['GET','POST'])
 def search_person_route():
     return search_person()
