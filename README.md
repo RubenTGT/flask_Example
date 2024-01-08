@@ -41,7 +41,22 @@ MYSQL_DB=
 ## Vistas
 
 ### Index
+![index](/docs/index_view.png)
+
+### Persona encontrada
+![persona_encontrada](/docs/persona_encontrada.png)
+![true](/docs/true.png)
+
+### Persona no encontrada
+![persona_encontrada](/docs/persona_no_encontrada.png)
+![true](/docs/false.png)
 
 ## Diseño de la base de datos
 ![Diagrama de base de datos](/docs/db_design.png)
 - Uso de llaves primarias y llaves foraneas para mantener la integridad referencial
+
+
+## Notas del proyecto
+
+- Debido a la prontitud de la prueba y la fecha de esta (domingo) no tuve la capacidad de tiempo para realizar pruebas unitarias y hacer el deploy de la app (punto 5 y 7) sin embargo considero que con un dia mas de trabajo podria realizar exitosamente esos puntos.
+- Para un proyecto mas grande elegiria una estructura de carpetas diferente enfocada en microservicios y en alguna arquitectura clean dependiendo de las necesidades del proyecto
